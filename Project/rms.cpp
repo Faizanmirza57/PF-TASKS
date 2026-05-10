@@ -5,7 +5,8 @@ main()
 {
    //the code in this file is completely human written without any help of AI, so please don't copy this and write your own.
    // Restaurant management system developed by Faizan Ahmed Mirza (2026(s)-GA-42)
-
+   
+//DATA STORAGE
    string foodNames[10];
    int foodPrices[10];
    int foodQuantity[10];
@@ -21,7 +22,9 @@ main()
    string adminPassword = "admin123";
 
    int choice, adminChoice, customerChoice;
-
+   
+//MAIN LOOP
+   
    while (true)
    {
       system("cls");
@@ -38,7 +41,9 @@ main()
       cout << endl;
       cout << "Enter your choice (1-3): ";
       cin >> choice;
-
+      
+//ADMIN CODE
+      
       if (choice == 1)
       {
          string pass;
@@ -208,7 +213,9 @@ main()
             }
          }
       }
-
+         
+//CUSTOMER CODE
+         
       else if (choice == 2)
       {
          while (true)
@@ -372,7 +379,7 @@ main()
             }
          }
       }
-
+//EXIT
       else if (choice == 3)
       {
          cout << "Thanks for using this software :)" << endl;
